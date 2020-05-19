@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Complete Bootstrap 4 Website Layout</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/BITS.jpg" alt="Logo" width="20%" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skill">Skill-Set</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--My info-->
+    <div class="container-fluid padding" style="padding-top: 10%;" id="home">
+      <div class="card mx-auto text-center" style="width: 80%;">
+        <div class="card-body">
+          <h4 class="card-title display-4">My Info</h4>
+          <p class="card-text">
+            <span class="text-danger"> My Name:</span
+            ><span class="text-success"> Sohan Reddy.A</span>
+            <br />
+            <span class="text-danger"> My Branch:</span
+            ><span class="text-primary"> Computer Science</span>
+          </p>
+          <img
+            class="card-img-bottom rounded"
+            src="./images/MyPic.jpg"
+            alt="My Pic"
+            style="padding-top: 10px; width: 30%;"
+          />
+        </div>
+      </div>
+    </div>
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed">
+          <img src="./images/Fixed.jpg" />
+        </div>
+      </div>
+    </figure>
+    <!--About me-->
+    <div class="container-fluid padding" id="About">
+      <h1 class="display-4 text-center">About Me</h1>
+      <h3 class="text-center text-primary" style="font-size: large;">
+        My interests:
+      </h3>
+      <p class="text-center" style="font-size: large;">
+        I'm more interested towards the coding and devolopment side of stuff,
+        like making games, apps, etc.<br />
+        I'm also interested in network security and ethical hacking related
+        things.
+      </p>
+      <h3 class="text-center text-primary" style="font-size: large;">
+        My hobbies:
+      </h3>
+      <p class="text-center" style="font-size: large;">
+        I like to play video games and watch anime.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <h1 class="display-4 text-center padding">Some games I love</h1>
+    </div>
+    <div id="game" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#game" data-slide-to="0" class="active"></li>
+        <li data-target="#game" data-slide-to="1"></li>
+        <li data-target="#game" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Ac3.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">Assassin's Creed 3</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/HK.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">Hollow Knight</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/DS2.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">Darksiders 2</h1>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#game" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#game" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="container-fluid">
+      <h1 class="display-4 text-center padding">Some anime I love</h1>
+    </div>
+    <div id="anime" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#anime" data-slide-to="0" class="active"></li>
+        <li data-target="#anime" data-slide-to="1"></li>
+        <li data-target="#anime" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/OP.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">One Piece</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Monster.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">Monster</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/SG.jpg" class="img-fluid" />
+          <div class="carousel-caption">
+            <h1 class="display-4">Steins;Gate</h1>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#anime" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#anime" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!--Stuff I'm focusing on during the lockdown-->
+    <div class="container-fluid padding bg-light">
+      <div class="card">
+        <div class="card-header">
+          <a
+            class="btn btn-secondary-outline btn-block stretched-link text-success"
+            data-toggle="collapse"
+            href="#stuff"
+            style="font-size: larger;"
+          >
+            Stuff I'm working on during this lockdown(Click Me)
+          </a>
+        </div>
+      </div>
+      <div id="stuff" class="collapse">
+        <div class="card-body">
+          <div class="row text-center padding bg-light">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="./images/WebD.jpg" width="80px" />
+              <h3>QSTP Web Devolopment</h3>
+              <p>What I'm doing right now</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <img src="./images/AppD.jpg" width="80px" />
+              <h3>QSTP App Devolopment</h3>
+              <p>I also enrolled in Andoid App devolopment QSTP</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <img src="./images/Krieg.jpg" width="80px" />
+              <h3>BitsKrieg</h3>
+              <p>I'm still learning the basics of scripting right now.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact Details-->
+    <div class="container bg-info mx-auto padding" id="Contact">
+      <h1 class="display-4 text-center">Contact Details</h1>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>Phone Number(WhatsApp):</td>
+            <td>+91-8296816087</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>f20190168@goa.bits-pilani.ac.in</td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--Projects-->
+    <div class="container-fluid mx-auto padding" id="Projects">
+      <h1 class="display-4 text-center">Projects</h1>
+      <p class="text-center text-secondary">
+        As of now I haven't done any projects, so I'm leaving the button
+        disabled until I do a few.
+      </p>
+    </div>
+    <div class="container-fluid mx-auto" id="Skill">
+      <h1 class="display-4 text-center">Skill-set</h1>
+      <p class="text-center text-secondary">
+        Programming Languages that I know: Java,Python,C,C++
+      </p>
+    </div>
+  </body>
+</html>
